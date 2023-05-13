@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="caixa">
+        <img src="./assets/banner-maior-1.jpg" alt="foto game">
+
+        <h1>O que você encontra aqui</h1>
+        <div class="centro">
+            <div class="lista">
+                <p>Limpeza de pele</p>
+                <p>Hidratação facial</p>
+                <p>Esfoliação</p>
+                <p>Drenagem linfática</p>
+                <p>Maquiagem</p>
+                <p>Design de sobrancelhas</p>
+                <p>Massagem relaxante</p>
+                <p>Massagem terapêutica</p>
+                <p>Depilação a laser</p>
+                <p>Radiofrequência íntima</p>
+            </div>
+
+
+
+            <div class="fotos">
+                <img class="foto" src="./assets/limpeza.png" alt="foto limpeza">
+                <img class="foto" src="./assets/drenagem.png" alt="foto drenagem">
+                <img class="foto" src="./assets/depilação.png" alt="foto depilação">
+            </div>
+        </div>
+       
+        <button class="contato" onclick="abrir()">Entre em Contato</button>
+    </div> 
+        <form action="https://formsubmit.co/marquesmivebe@gmail.com" method="POST">
+            <input type="text" name="name" required placeholder="nome">
+            <input type="email" name="email" required placeholder="e-mail">
+            <input type="tel" name="telefone" placeholder="Telefone">
+            <textarea placeholder="Digite sua dúvida"></textarea>
+            <button type="submit">Enviar</button>
+            <button onclick="fechar()" type="button" class="voltar">Voltar</button>
+        </form>
+</body>
+
+<script>
+    function abrir() {
+        document.querySelector("form").style.opacity = 1
+        document.querySelector("div").style.opacity = 0.1
+    }
+    function fechar() {
+        document.querySelector("form").style.opacity = 0
+        document.querySelector("div").style.opacity = 1
+    }
+</script>
+
+</html>
